@@ -13,14 +13,14 @@ const Footer = () => {
          <div>
             <h1 className='w-full text-2xl m-2 font-bold text-[#00df9a]'>REACT .</h1>
             <p className='py-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusantium, exercitationem aliquam ut iure earum quia nulla.</p>
-            <div className='flex justify-between md:w-[%75] my-5'>
+            <div className='flex justify-between md:w-[%65] my-5 gap-10'>
                 <FaFacebookSquare size ={25}/>
                 <FaInstagram size ={25}/>
                 <FaTwitterSquare size ={25}/>
                 <FaGithubSquare size ={25}/>
                 <FaDribbbleSquare size ={25}/>
             </div>
-            Made by Kiki
+          
          </div>
          {/* grid div */}
         <div className='flex justify-evenly lg:col-span-2 mt-4 '>
@@ -53,8 +53,9 @@ const Footer = () => {
                 <li className='py-2 text-sm'>Contact</li>
                 </ul>
             </div>
-
+               
          </div>
+         <p className='mx-auto '>  Made by Kiki</p>
     </div>
   )
 }
