@@ -20,6 +20,7 @@ const Footer = () => {
                 <FaGithubSquare size ={25}/>
                 <FaDribbbleSquare size ={25}/>
             </div>
+            Made by Kiki
          </div>
          {/* grid div */}
         <div className='flex justify-evenly lg:col-span-2 mt-4 '>
