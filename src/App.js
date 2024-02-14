@@ -7,14 +7,21 @@ import Cards from './Component/Cards'
 import Footer from './Component/Footer'
 
 const App = () => {
+
+  const scrollToTop=() =>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
   return (
     <div>
       <Navbar/>
       <Hero/>
-      <Analytics/>
-      <NewsLetter/>
-      <Cards />
-      <Footer/>
+      <Analytics scrollToTop={scrollToTop}/>
+      <NewsLetter scrollToTop={scrollToTop}/>
+      <Cards scrollToTop={scrollToTop}/>
+      <Footer scrollToTop={scrollToTop}/>
     </div>
   )
 }

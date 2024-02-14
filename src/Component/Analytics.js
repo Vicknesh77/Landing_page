@@ -2,7 +2,7 @@ import React from 'react'
 import Laptop from '../assests/laptop.jpg'
 
 
-const Analytics = () => {
+const Analytics = ({scrollToTop}) => {
   return (
     <div className='w-full bg-white py-16 px-5'>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
@@ -13,7 +13,7 @@ const Analytics = () => {
                 <p className=''>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam deleniti ab, reprehenderit aut molestias autem quo modi error enim! Quidem animi dolorum eos quibusdam quis, odit consectetur reprehenderit 
                 </p>
-                <button className='bg-[#000300] text-[#00df9a] w-[170px] font-semi-bold my-8 py-3 mx-auto px-2 rounded-3xl md:mx-0'> Read more</button>
+                <button onClick={scrollToTop} className='bg-[#000300] text-[#00df9a] w-[170px] font-semi-bold my-8 py-3 mx-auto px-2 rounded-3xl md:mx-0'> Read more</button>
             </div>
         </div>
 

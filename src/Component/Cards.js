@@ -4,7 +4,10 @@ import Double from '../assests/double.png'
 import triple from '../assests/triple.png'
 import CountUp from 'react-countup';
 
-const Cards = () => {
+const Cards = ({scrollToTop}) => {
+
+
+
   return (
     <div className='w-full py-[160px] px-4 bg-white '>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-7'> 
@@ -18,7 +21,7 @@ const Cards = () => {
                     <p className='py-2 border-b'>1 Granted user</p>
                     <p className='py-2 border-b mb-6'>Send up to 2 GB</p>
                 </div>
-                <button className='bg-[#00df9a] text-black mx-auto  px-8 py-2 font-semibold rounded-md '>Start Trial</button>
+                <button onClick={scrollToTop} className='bg-[#00df9a] text-black mx-auto  px-8 py-2 font-semibold rounded-md '>Start Trial</button>
             </div>
 
 {/* card 2 */}
@@ -32,7 +35,7 @@ const Cards = () => {
                     <p className='py-2 border-b'>1 Granted user</p>
                     <p className='py-2 border-b mb-6'>Send up to 2 GB</p>
                 </div>
-                <button className='bg-black text-[#00df9a] mx-auto  px-8 py-2 font-semibold rounded-md '>Start Trial</button>
+                <button onClick={scrollToTop} className='bg-black text-[#00df9a] mx-auto  px-8 py-2 font-semibold rounded-md '>Start Trial</button>
             </div>
 
                        {/* card 3 */}
@@ -46,7 +49,7 @@ const Cards = () => {
                     <p className='py-2 border-b'>1 Granted user</p>
                     <p className='py-2 border-b mb-6'>Send up to 2 GB</p>
                 </div>
-                <button className='bg-[#00df9a] text-black mx-auto  px-8 py-2 font-semibold rounded-md '>Start Trial</button>
+                <button className='bg-[#00df9a] text-black mx-auto  px-8 py-2 font-semibold rounded-md  ' onClick={scrollToTop}>Start Trial</button>
             </div>
        
         </div>
